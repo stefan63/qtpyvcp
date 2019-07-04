@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1924</width>
+    <width>1907</width>
     <height>1103</height>
    </rect>
   </property>
@@ -24947,7 +24947,7 @@ border-radius: 1px;
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1924</width>
+     <width>1907</width>
      <height>27</height>
     </rect>
    </property>
@@ -26474,13 +26474,13 @@ font: 11pt bebas kai;
   </property>
  </designerdata>
  <buttongroups>
-  <buttongroup name="probehelpGroup"/>
-  <buttongroup name="xycalbtnGroup"/>
+  <buttongroup name="probetabGroup"/>
   <buttongroup name="plotviewGroup"/>
+  <buttongroup name="probehelpGroup"/>
   <buttongroup name="mainorthoperspbtnGroup"/>
+  <buttongroup name="xycalbtnGroup"/>
   <buttongroup name="proberoutinebtnGroup"/>
   <buttongroup name="plotorthoperspbtnGroup"/>
   <buttongroup name="probemodeGroup"/>
-  <buttongroup name="probetabGroup"/>
  </buttongroups>
 </ui>

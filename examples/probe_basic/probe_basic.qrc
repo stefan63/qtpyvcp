@@ -89,5 +89,6 @@
     <file>images/up_arrow.png</file>
     <file>images/down_arrow.png</file>
     <file>images/backspace.png</file>
+    
 </qresource>
 </RCC>
