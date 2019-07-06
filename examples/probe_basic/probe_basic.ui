@@ -413,6 +413,9 @@ QComboBox QAbstractItemView{
                   <property name="placeholderText">
                    <string>MDI</string>
                   </property>
+                  <property name="inputType" stdset="0">
+                   <string>mdi</string>
+                  </property>
                  </widget>
                 </item>
                </layout>
@@ -2993,6 +2996,9 @@ font: 16pt &quot;Bebas Kai&quot;;
                 <property name="placeholderText">
                  <string>MDI</string>
                 </property>
+                <property name="inputType" stdset="0">
+                 <string>mdi</string>
+                </property>
                </widget>
               </item>
              </layout>
@@ -3439,13 +3445,10 @@ font: 16pt &quot;Bebas Kai&quot;;
                     <number>2</number>
                    </property>
                    <item>
-                    <widget class="QLineEdit" name="load_spindle_tool_number">
-                     <property name="enabled">
-                      <bool>true</bool>
-                     </property>
+                    <widget class="VCPLineEdit" name="load_spindle_tool_number">
                      <property name="sizePolicy">
-                      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                       <horstretch>200</horstretch>
+                      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                       <horstretch>0</horstretch>
                        <verstretch>0</verstretch>
                       </sizepolicy>
                      </property>
@@ -3457,18 +3460,277 @@ font: 16pt &quot;Bebas Kai&quot;;
                      </property>
                      <property name="maximumSize">
                       <size>
-                       <width>16777215</width>
+                       <width>55</width>
                        <height>43</height>
                       </size>
                      </property>
+                     <property name="sizeIncrement">
+                      <size>
+                       <width>0</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                     <property name="palette">
+                      <palette>
+                       <active>
+                        <colorrole role="WindowText">
+                         <brush brushstyle="SolidPattern">
+                          <color alpha="255">
+                           <red>0</red>
+                           <green>0</green>
+                           <blue>0</blue>
+                          </color>
+                         </brush>
+                        </colorrole>
+                        <colorrole role="Button">
+                         <brush brushstyle="SolidPattern">
+                          <color alpha="255">
+                           <red>255</red>
+                           <green>255</green>
+                           <blue>255</blue>
+                          </color>
+                         </brush>
+                        </colorrole>
+                        <colorrole role="Text">
+                         <brush brushstyle="SolidPattern">
+                          <color alpha="255">
+                           <red>0</red>
+                           <green>0</green>
+                           <blue>0</blue>
+                          </color>
+                         </brush>
+                        </colorrole>
+                        <colorrole role="ButtonText">
+                         <brush brushstyle="SolidPattern">
+                          <color alpha="255">
+                           <red>0</red>
+                           <green>0</green>
+                           <blue>0</blue>
+                          </color>
+                         </brush>
+                        </colorrole>
+                        <colorrole role="Base">
+                         <brush brushstyle="SolidPattern">
+                          <color alpha="255">
+                           <red>255</red>
+                           <green>255</green>
+                           <blue>255</blue>
+                          </color>
+                         </brush>
+                        </colorrole>
+                        <colorrole role="Window">
+                         <brush brushstyle="SolidPattern">
+                          <color alpha="255">
+                           <red>255</red>
+                           <green>255</green>
+                           <blue>255</blue>
+                          </color>
+                         </brush>
+                        </colorrole>
+                        <colorrole role="Highlight">
+                         <brush brushstyle="SolidPattern">
+                          <color alpha="255">
+                           <red>65</red>
+                           <green>84</green>
+                           <blue>255</blue>
+                          </color>
+                         </brush>
+                        </colorrole>
+                        <colorrole role="HighlightedText">
+                         <brush brushstyle="SolidPattern">
+                          <color alpha="255">
+                           <red>255</red>
+                           <green>255</green>
+                           <blue>255</blue>
+                          </color>
+                         </brush>
+                        </colorrole>
+                       </active>
+                       <inactive>
+                        <colorrole role="WindowText">
+                         <brush brushstyle="SolidPattern">
+                          <color alpha="255">
+                           <red>0</red>
+                           <green>0</green>
+                           <blue>0</blue>
+                          </color>
+                         </brush>
+                        </colorrole>
+                        <colorrole role="Button">
+                         <brush brushstyle="SolidPattern">
+                          <color alpha="255">
+                           <red>255</red>
+                           <green>255</green>
+                           <blue>255</blue>
+                          </color>
+                         </brush>
+                        </colorrole>
+                        <colorrole role="Text">
+                         <brush brushstyle="SolidPattern">
+                          <color alpha="255">
+                           <red>0</red>
+                           <green>0</green>
+                           <blue>0</blue>
+                          </color>
+                         </brush>
+                        </colorrole>
+                        <colorrole role="ButtonText">
+                         <brush brushstyle="SolidPattern">
+                          <color alpha="255">
+                           <red>0</red>
+                           <green>0</green>
+                           <blue>0</blue>
+                          </color>
+                         </brush>
+                        </colorrole>
+                        <colorrole role="Base">
+                         <brush brushstyle="SolidPattern">
+                          <color alpha="255">
+                           <red>255</red>
+                           <green>255</green>
+                           <blue>255</blue>
+                          </color>
+                         </brush>
+                        </colorrole>
+                        <colorrole role="Window">
+                         <brush brushstyle="SolidPattern">
+                          <color alpha="255">
+                           <red>255</red>
+                           <green>255</green>
+                           <blue>255</blue>
+                          </color>
+                         </brush>
+                        </colorrole>
+                        <colorrole role="Highlight">
+                         <brush brushstyle="SolidPattern">
+                          <color alpha="255">
+                           <red>65</red>
+                           <green>84</green>
+                           <blue>255</blue>
+                          </color>
+                         </brush>
+                        </colorrole>
+                        <colorrole role="HighlightedText">
+                         <brush brushstyle="SolidPattern">
+                          <color alpha="255">
+                           <red>255</red>
+                           <green>255</green>
+                           <blue>255</blue>
+                          </color>
+                         </brush>
+                        </colorrole>
+                       </inactive>
+                       <disabled>
+                        <colorrole role="WindowText">
+                         <brush brushstyle="SolidPattern">
+                          <color alpha="255">
+                           <red>0</red>
+                           <green>0</green>
+                           <blue>0</blue>
+                          </color>
+                         </brush>
+                        </colorrole>
+                        <colorrole role="Button">
+                         <brush brushstyle="SolidPattern">
+                          <color alpha="255">
+                           <red>255</red>
+                           <green>255</green>
+                           <blue>255</blue>
+                          </color>
+                         </brush>
+                        </colorrole>
+                        <colorrole role="Text">
+                         <brush brushstyle="SolidPattern">
+                          <color alpha="255">
+                           <red>0</red>
+                           <green>0</green>
+                           <blue>0</blue>
+                          </color>
+                         </brush>
+                        </colorrole>
+                        <colorrole role="ButtonText">
+                         <brush brushstyle="SolidPattern">
+                          <color alpha="255">
+                           <red>0</red>
+                           <green>0</green>
+                           <blue>0</blue>
+                          </color>
+                         </brush>
+                        </colorrole>
+                        <colorrole role="Base">
+                         <brush brushstyle="SolidPattern">
+                          <color alpha="255">
+                           <red>255</red>
+                           <green>255</green>
+                           <blue>255</blue>
+                          </color>
+                         </brush>
+                        </colorrole>
+                        <colorrole role="Window">
+                         <brush brushstyle="SolidPattern">
+                          <color alpha="255">
+                           <red>255</red>
+                           <green>255</green>
+                           <blue>255</blue>
+                          </color>
+                         </brush>
+                        </colorrole>
+                        <colorrole role="Highlight">
+                         <brush brushstyle="SolidPattern">
+                          <color alpha="255">
+                           <red>65</red>
+                           <green>84</green>
+                           <blue>255</blue>
+                          </color>
+                         </brush>
+                        </colorrole>
+                        <colorrole role="HighlightedText">
+                         <brush brushstyle="SolidPattern">
+                          <color alpha="255">
+                           <red>255</red>
+                           <green>255</green>
+                           <blue>255</blue>
+                          </color>
+                         </brush>
+                        </colorrole>
+                       </disabled>
+                      </palette>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Bebas Kai</family>
+                       <pointsize>17</pointsize>
+                       <weight>50</weight>
+                       <italic>false</italic>
+                       <bold>false</bold>
+                      </font>
+                     </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::ClickFocus</enum>
+                     </property>
+                     <property name="contextMenuPolicy">
+                      <enum>Qt::NoContextMenu</enum>
+                     </property>
                      <property name="styleSheet">
                       <string notr="true">font: 17pt;</string>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="frame">
+                      <bool>true</bool>
                      </property>
                      <property name="alignment">
                       <set>Qt::AlignCenter</set>
                      </property>
                      <property name="placeholderText">
                       <string>0</string>
+                     </property>
+                     <property name="rules" stdset="0">
+                      <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;tooltable:current_tool?tool_number&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;str(ch[0])&quot;, &quot;name&quot;: &quot;update tool num&quot;}, {&quot;channels&quot;: [{&quot;url&quot;: &quot;status:task_state?text&quot;, &quot;trigger&quot;: true}, {&quot;url&quot;: &quot;status:interp_state?text&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Enable&quot;, &quot;expression&quot;: &quot;ch[0] == 'On' and ch[1] == 'Idle'&quot;, &quot;name&quot;: &quot;enable/disable&quot;}]</string>
+                     </property>
+                     <property name="inputType" stdset="0">
+                      <string>int</string>
                      </property>
                     </widget>
                    </item>
@@ -4058,6 +4320,9 @@ font: 16pt &quot;Bebas Kai&quot;;
                      </property>
                      <property name="rules" stdset="0">
                       <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;tooltable:current_tool?tool_number&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;str(ch[0])&quot;, &quot;name&quot;: &quot;update tool num&quot;}, {&quot;channels&quot;: [{&quot;url&quot;: &quot;status:task_state?text&quot;, &quot;trigger&quot;: true}, {&quot;url&quot;: &quot;status:interp_state?text&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Enable&quot;, &quot;expression&quot;: &quot;ch[0] == 'On' and ch[1] == 'Idle'&quot;, &quot;name&quot;: &quot;enable/disable&quot;}]</string>
+                     </property>
+                     <property name="inputType" stdset="0">
+                      <string>int</string>
                      </property>
                     </widget>
                    </item>
@@ -5440,6 +5705,9 @@ color: rgb(255, 255, 255);
                  <property name="placeholderText">
                   <string>MDI</string>
                  </property>
+                 <property name="inputType" stdset="0">
+                  <string>mdi</string>
+                 </property>
                 </widget>
                 <widget class="StatusLabel" name="tool_length_6">
                  <property name="geometry">
@@ -6805,6 +7073,9 @@ QHeaderView {
                 </property>
                 <property name="placeholderText">
                  <string>MDI</string>
+                </property>
+                <property name="inputType" stdset="0">
+                 <string>mdi</string>
                 </property>
                </widget>
               </item>
@@ -9753,7 +10024,7 @@ color: white;
                     </widget>
                    </item>
                    <item>
-                    <widget class="QLineEdit" name="probe_tool_number">
+                    <widget class="VCPLineEdit" name="probe_tool_number">
                      <property name="sizePolicy">
                       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                        <horstretch>0</horstretch>
@@ -9772,20 +10043,14 @@ color: white;
                        <height>31</height>
                       </size>
                      </property>
-                     <property name="focusPolicy">
-                      <enum>Qt::ClickFocus</enum>
-                     </property>
-                     <property name="styleSheet">
-                      <string notr="true"/>
-                     </property>
                      <property name="text">
                       <string>99</string>
                      </property>
                      <property name="alignment">
                       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
                      </property>
-                     <property name="clearButtonEnabled">
-                      <bool>false</bool>
+                     <property name="inputType" stdset="0">
+                      <string>int</string>
                      </property>
                     </widget>
                    </item>
@@ -9836,7 +10101,7 @@ color: white;
                     </widget>
                    </item>
                    <item>
-                    <widget class="QLineEdit" name="step_off_width">
+                    <widget class="VCPLineEdit" name="step_off_width">
                      <property name="sizePolicy">
                       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                        <horstretch>0</horstretch>
@@ -9855,17 +10120,14 @@ color: white;
                        <height>31</height>
                       </size>
                      </property>
-                     <property name="focusPolicy">
-                      <enum>Qt::ClickFocus</enum>
-                     </property>
-                     <property name="styleSheet">
-                      <string notr="true"/>
-                     </property>
                      <property name="text">
                       <string>0.2500</string>
                      </property>
                      <property name="alignment">
                       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                     </property>
+                     <property name="inputType" stdset="0">
+                      <string>int</string>
                      </property>
                     </widget>
                    </item>
@@ -9939,7 +10201,7 @@ color: white;
                     </widget>
                    </item>
                    <item>
-                    <widget class="QLineEdit" name="probe_fast_fr">
+                    <widget class="VCPLineEdit" name="probe_fast_fr">
                      <property name="sizePolicy">
                       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                        <horstretch>0</horstretch>
@@ -9958,20 +10220,14 @@ color: white;
                        <height>31</height>
                       </size>
                      </property>
-                     <property name="focusPolicy">
-                      <enum>Qt::ClickFocus</enum>
-                     </property>
-                     <property name="styleSheet">
-                      <string notr="true"/>
-                     </property>
-                     <property name="inputMask">
-                      <string/>
-                     </property>
                      <property name="text">
-                      <string>7.0</string>
+                      <string>10.0</string>
                      </property>
                      <property name="alignment">
                       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                     </property>
+                     <property name="inputType" stdset="0">
+                      <string>int</string>
                      </property>
                     </widget>
                    </item>
@@ -10022,7 +10278,7 @@ color: white;
                     </widget>
                    </item>
                    <item>
-                    <widget class="QLineEdit" name="probe_slow_fr">
+                    <widget class="VCPLineEdit" name="probe_slow_fr">
                      <property name="sizePolicy">
                       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                        <horstretch>0</horstretch>
@@ -10041,17 +10297,14 @@ color: white;
                        <height>31</height>
                       </size>
                      </property>
-                     <property name="focusPolicy">
-                      <enum>Qt::ClickFocus</enum>
-                     </property>
-                     <property name="styleSheet">
-                      <string notr="true"/>
-                     </property>
                      <property name="text">
                       <string>0.0</string>
                      </property>
                      <property name="alignment">
                       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                     </property>
+                     <property name="inputType" stdset="0">
+                      <string>int</string>
                      </property>
                     </widget>
                    </item>
@@ -10125,7 +10378,7 @@ color: white;
                     </widget>
                    </item>
                    <item>
-                    <widget class="QLineEdit" name="max_xy_distance">
+                    <widget class="VCPLineEdit" name="max_xy_distance">
                      <property name="sizePolicy">
                       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                        <horstretch>0</horstretch>
@@ -10144,17 +10397,14 @@ color: white;
                        <height>31</height>
                       </size>
                      </property>
-                     <property name="focusPolicy">
-                      <enum>Qt::ClickFocus</enum>
-                     </property>
-                     <property name="styleSheet">
-                      <string notr="true"/>
-                     </property>
                      <property name="text">
                       <string>1.0000</string>
                      </property>
                      <property name="alignment">
                       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                     </property>
+                     <property name="inputType" stdset="0">
+                      <string>int</string>
                      </property>
                     </widget>
                    </item>
@@ -10205,7 +10455,7 @@ color: white;
                     </widget>
                    </item>
                    <item>
-                    <widget class="QLineEdit" name="xy_clearance">
+                    <widget class="VCPLineEdit" name="xy_clearance">
                      <property name="sizePolicy">
                       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                        <horstretch>0</horstretch>
@@ -10224,17 +10474,14 @@ color: white;
                        <height>31</height>
                       </size>
                      </property>
-                     <property name="focusPolicy">
-                      <enum>Qt::ClickFocus</enum>
-                     </property>
-                     <property name="styleSheet">
-                      <string notr="true"/>
-                     </property>
                      <property name="text">
                       <string>0.1000</string>
                      </property>
                      <property name="alignment">
                       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                     </property>
+                     <property name="inputType" stdset="0">
+                      <string>int</string>
                      </property>
                     </widget>
                    </item>
@@ -10308,7 +10555,7 @@ color: white;
                     </widget>
                    </item>
                    <item>
-                    <widget class="QLineEdit" name="max_z_distance">
+                    <widget class="VCPLineEdit" name="max_z_distance">
                      <property name="sizePolicy">
                       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                        <horstretch>0</horstretch>
@@ -10327,17 +10574,14 @@ color: white;
                        <height>31</height>
                       </size>
                      </property>
-                     <property name="focusPolicy">
-                      <enum>Qt::ClickFocus</enum>
-                     </property>
-                     <property name="styleSheet">
-                      <string notr="true"/>
-                     </property>
                      <property name="text">
                       <string>1.0000</string>
                      </property>
                      <property name="alignment">
                       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                     </property>
+                     <property name="inputType" stdset="0">
+                      <string>int</string>
                      </property>
                     </widget>
                    </item>
@@ -10388,7 +10632,7 @@ color: white;
                     </widget>
                    </item>
                    <item>
-                    <widget class="QLineEdit" name="z_clearance">
+                    <widget class="VCPLineEdit" name="z_clearance">
                      <property name="sizePolicy">
                       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                        <horstretch>0</horstretch>
@@ -10407,17 +10651,14 @@ color: white;
                        <height>31</height>
                       </size>
                      </property>
-                     <property name="focusPolicy">
-                      <enum>Qt::ClickFocus</enum>
-                     </property>
-                     <property name="styleSheet">
-                      <string notr="true"/>
-                     </property>
                      <property name="text">
                       <string>0.1000</string>
                      </property>
                      <property name="alignment">
                       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                     </property>
+                     <property name="inputType" stdset="0">
+                      <string>int</string>
                      </property>
                     </widget>
                    </item>
@@ -10497,7 +10738,7 @@ color: white;
                     </widget>
                    </item>
                    <item>
-                    <widget class="QLineEdit" name="extra_probe_depth">
+                    <widget class="VCPLineEdit" name="extra_probe_depth">
                      <property name="sizePolicy">
                       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                        <horstretch>0</horstretch>
@@ -10516,17 +10757,14 @@ color: white;
                        <height>31</height>
                       </size>
                      </property>
-                     <property name="focusPolicy">
-                      <enum>Qt::ClickFocus</enum>
-                     </property>
-                     <property name="styleSheet">
-                      <string notr="true"/>
-                     </property>
                      <property name="text">
                       <string>0.0000</string>
                      </property>
                      <property name="alignment">
                       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                     </property>
+                     <property name="inputType" stdset="0">
+                      <string>int</string>
                      </property>
                     </widget>
                    </item>
@@ -10577,7 +10815,7 @@ color: white;
                     </widget>
                    </item>
                    <item>
-                    <widget class="QLineEdit" name="edge_width">
+                    <widget class="VCPLineEdit" name="edge_width">
                      <property name="sizePolicy">
                       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                        <horstretch>0</horstretch>
@@ -10596,17 +10834,14 @@ color: white;
                        <height>31</height>
                       </size>
                      </property>
-                     <property name="focusPolicy">
-                      <enum>Qt::ClickFocus</enum>
-                     </property>
-                     <property name="styleSheet">
-                      <string notr="true"/>
-                     </property>
                      <property name="text">
                       <string>0.5000</string>
                      </property>
                      <property name="alignment">
                       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                     </property>
+                     <property name="inputType" stdset="0">
+                      <string>int</string>
                      </property>
                     </widget>
                    </item>
@@ -11985,6 +12220,9 @@ color: white;
                  </property>
                  <property name="placeholderText">
                   <string>MDI</string>
+                 </property>
+                 <property name="inputType" stdset="0">
+                  <string>mdi</string>
                  </property>
                 </widget>
                </item>
@@ -13597,7 +13835,13 @@ padding-left: 5px;
                                </widget>
                               </item>
                               <item>
-                               <widget class="QLineEdit" name="diameter_hint">
+                               <widget class="VCPLineEdit" name="diameter_hint">
+                                <property name="sizePolicy">
+                                 <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                                  <horstretch>0</horstretch>
+                                  <verstretch>0</verstretch>
+                                 </sizepolicy>
+                                </property>
                                 <property name="minimumSize">
                                  <size>
                                   <width>80</width>
@@ -13610,12 +13854,6 @@ padding-left: 5px;
                                   <height>40</height>
                                  </size>
                                 </property>
-                                <property name="focusPolicy">
-                                 <enum>Qt::ClickFocus</enum>
-                                </property>
-                                <property name="styleSheet">
-                                 <string notr="true"/>
-                                </property>
                                 <property name="text">
                                  <string/>
                                 </property>
@@ -13624,6 +13862,9 @@ padding-left: 5px;
                                 </property>
                                 <property name="placeholderText">
                                  <string>0.0000</string>
+                                </property>
+                                <property name="inputType" stdset="0">
+                                 <string>int</string>
                                 </property>
                                </widget>
                               </item>
@@ -13661,7 +13902,13 @@ padding-left: 5px;
                                </widget>
                               </item>
                               <item>
-                               <widget class="QLineEdit" name="x_hint_0">
+                               <widget class="VCPLineEdit" name="x_hint_0">
+                                <property name="sizePolicy">
+                                 <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                                  <horstretch>0</horstretch>
+                                  <verstretch>0</verstretch>
+                                 </sizepolicy>
+                                </property>
                                 <property name="minimumSize">
                                  <size>
                                   <width>80</width>
@@ -13674,12 +13921,6 @@ padding-left: 5px;
                                   <height>40</height>
                                  </size>
                                 </property>
-                                <property name="focusPolicy">
-                                 <enum>Qt::ClickFocus</enum>
-                                </property>
-                                <property name="styleSheet">
-                                 <string notr="true"/>
-                                </property>
                                 <property name="text">
                                  <string/>
                                 </property>
@@ -13688,6 +13929,9 @@ padding-left: 5px;
                                 </property>
                                 <property name="placeholderText">
                                  <string>0.0000</string>
+                                </property>
+                                <property name="inputType" stdset="0">
+                                 <string>int</string>
                                 </property>
                                </widget>
                               </item>
@@ -13725,7 +13969,13 @@ padding-left: 5px;
                                </widget>
                               </item>
                               <item>
-                               <widget class="QLineEdit" name="y_hint_0">
+                               <widget class="VCPLineEdit" name="y_hint_0">
+                                <property name="sizePolicy">
+                                 <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                                  <horstretch>0</horstretch>
+                                  <verstretch>0</verstretch>
+                                 </sizepolicy>
+                                </property>
                                 <property name="minimumSize">
                                  <size>
                                   <width>80</width>
@@ -13738,12 +13988,6 @@ padding-left: 5px;
                                   <height>40</height>
                                  </size>
                                 </property>
-                                <property name="focusPolicy">
-                                 <enum>Qt::ClickFocus</enum>
-                                </property>
-                                <property name="styleSheet">
-                                 <string notr="true"/>
-                                </property>
                                 <property name="text">
                                  <string/>
                                 </property>
@@ -13752,6 +13996,9 @@ padding-left: 5px;
                                 </property>
                                 <property name="placeholderText">
                                  <string>0.0000</string>
+                                </property>
+                                <property name="inputType" stdset="0">
+                                 <string>int</string>
                                 </property>
                                </widget>
                               </item>
@@ -14062,7 +14309,13 @@ padding-left: 5px;
                                </widget>
                               </item>
                               <item>
-                               <widget class="QLineEdit" name="x_hint">
+                               <widget class="VCPLineEdit" name="x_hint">
+                                <property name="sizePolicy">
+                                 <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                                  <horstretch>0</horstretch>
+                                  <verstretch>0</verstretch>
+                                 </sizepolicy>
+                                </property>
                                 <property name="minimumSize">
                                  <size>
                                   <width>80</width>
@@ -14075,12 +14328,6 @@ padding-left: 5px;
                                   <height>40</height>
                                  </size>
                                 </property>
-                                <property name="focusPolicy">
-                                 <enum>Qt::ClickFocus</enum>
-                                </property>
-                                <property name="styleSheet">
-                                 <string notr="true"/>
-                                </property>
                                 <property name="text">
                                  <string/>
                                 </property>
@@ -14089,6 +14336,9 @@ padding-left: 5px;
                                 </property>
                                 <property name="placeholderText">
                                  <string>0.0000</string>
+                                </property>
+                                <property name="inputType" stdset="0">
+                                 <string>int</string>
                                 </property>
                                </widget>
                               </item>
@@ -14126,7 +14376,13 @@ padding-left: 5px;
                                </widget>
                               </item>
                               <item>
-                               <widget class="QLineEdit" name="y_hint">
+                               <widget class="VCPLineEdit" name="y_hint">
+                                <property name="sizePolicy">
+                                 <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                                  <horstretch>0</horstretch>
+                                  <verstretch>0</verstretch>
+                                 </sizepolicy>
+                                </property>
                                 <property name="minimumSize">
                                  <size>
                                   <width>80</width>
@@ -14139,12 +14395,6 @@ padding-left: 5px;
                                   <height>40</height>
                                  </size>
                                 </property>
-                                <property name="focusPolicy">
-                                 <enum>Qt::ClickFocus</enum>
-                                </property>
-                                <property name="styleSheet">
-                                 <string notr="true"/>
-                                </property>
                                 <property name="text">
                                  <string/>
                                 </property>
@@ -14154,8 +14404,8 @@ padding-left: 5px;
                                 <property name="placeholderText">
                                  <string>0.0000</string>
                                 </property>
-                                <property name="clearButtonEnabled">
-                                 <bool>false</bool>
+                                <property name="inputType" stdset="0">
+                                 <string>int</string>
                                 </property>
                                </widget>
                               </item>
@@ -14834,6 +15084,9 @@ color: rgb(255, 255, 255);
                                <property name="rules" stdset="0">
                                 <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:aout&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;\&quot;{:6.6f}\&quot;.format(ch[0][12])&quot;, &quot;name&quot;: &quot;auto_cal_offset&quot;}]</string>
                                </property>
+                               <property name="inputType" stdset="0">
+                                <string>int</string>
+                               </property>
                               </widget>
                              </item>
                              <item>
@@ -15072,7 +15325,13 @@ color: rgb(255, 255, 255);
                                  </widget>
                                 </item>
                                 <item row="1" column="0">
-                                 <widget class="QLineEdit" name="cal_diameter">
+                                 <widget class="VCPLineEdit" name="cal_diameter">
+                                  <property name="sizePolicy">
+                                   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                   </sizepolicy>
+                                  </property>
                                   <property name="minimumSize">
                                    <size>
                                     <width>130</width>
@@ -15085,12 +15344,10 @@ color: rgb(255, 255, 255);
                                     <height>35</height>
                                    </size>
                                   </property>
-                                  <property name="focusPolicy">
-                                   <enum>Qt::ClickFocus</enum>
-                                  </property>
                                   <property name="styleSheet">
                                    <string notr="true">margin-right: 14px;
-margin-left: 14px;</string>
+margin-left: 14px;
+</string>
                                   </property>
                                   <property name="text">
                                    <string/>
@@ -15100,6 +15357,9 @@ margin-left: 14px;</string>
                                   </property>
                                   <property name="placeholderText">
                                    <string>0.0000</string>
+                                  </property>
+                                  <property name="inputType" stdset="0">
+                                   <string>int</string>
                                   </property>
                                  </widget>
                                 </item>
@@ -15468,40 +15728,6 @@ color: white;
                                   </property>
                                  </widget>
                                 </item>
-                                <item row="1" column="1">
-                                 <widget class="QLineEdit" name="x_cal_width">
-                                  <property name="minimumSize">
-                                   <size>
-                                    <width>87</width>
-                                    <height>35</height>
-                                   </size>
-                                  </property>
-                                  <property name="maximumSize">
-                                   <size>
-                                    <width>87</width>
-                                    <height>35</height>
-                                   </size>
-                                  </property>
-                                  <property name="focusPolicy">
-                                   <enum>Qt::ClickFocus</enum>
-                                  </property>
-                                  <property name="styleSheet">
-                                   <string notr="true"/>
-                                  </property>
-                                  <property name="text">
-                                   <string/>
-                                  </property>
-                                  <property name="cursorPosition">
-                                   <number>0</number>
-                                  </property>
-                                  <property name="alignment">
-                                   <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-                                  </property>
-                                  <property name="placeholderText">
-                                   <string>0.0000</string>
-                                  </property>
-                                 </widget>
-                                </item>
                                 <item row="2" column="0">
                                  <widget class="QLabel" name="label_107">
                                   <property name="sizePolicy">
@@ -15542,8 +15768,14 @@ color: white;
                                   </property>
                                  </widget>
                                 </item>
-                                <item row="2" column="1">
-                                 <widget class="QLineEdit" name="y_cal_width">
+                                <item row="1" column="1">
+                                 <widget class="VCPLineEdit" name="x_cal_width">
+                                  <property name="sizePolicy">
+                                   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                   </sizepolicy>
+                                  </property>
                                   <property name="minimumSize">
                                    <size>
                                     <width>87</width>
@@ -15556,11 +15788,39 @@ color: white;
                                     <height>35</height>
                                    </size>
                                   </property>
-                                  <property name="focusPolicy">
-                                   <enum>Qt::ClickFocus</enum>
+                                  <property name="text">
+                                   <string/>
                                   </property>
-                                  <property name="styleSheet">
-                                   <string notr="true"/>
+                                  <property name="alignment">
+                                   <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                                  </property>
+                                  <property name="placeholderText">
+                                   <string>0.0000</string>
+                                  </property>
+                                  <property name="inputType" stdset="0">
+                                   <string>int</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                                <item row="2" column="1">
+                                 <widget class="VCPLineEdit" name="y_cal_width">
+                                  <property name="sizePolicy">
+                                   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                                    <horstretch>0</horstretch>
+                                    <verstretch>0</verstretch>
+                                   </sizepolicy>
+                                  </property>
+                                  <property name="minimumSize">
+                                   <size>
+                                    <width>87</width>
+                                    <height>35</height>
+                                   </size>
+                                  </property>
+                                  <property name="maximumSize">
+                                   <size>
+                                    <width>87</width>
+                                    <height>35</height>
+                                   </size>
                                   </property>
                                   <property name="text">
                                    <string/>
@@ -15570,6 +15830,9 @@ color: white;
                                   </property>
                                   <property name="placeholderText">
                                    <string>0.0000</string>
+                                  </property>
+                                  <property name="inputType" stdset="0">
+                                   <string>int</string>
                                   </property>
                                  </widget>
                                 </item>
@@ -17392,7 +17655,7 @@ QAbstractSpinBox:selected {
            <enum>QTabWidget::South</enum>
           </property>
           <property name="currentIndex">
-           <number>0</number>
+           <number>1</number>
           </property>
           <widget class="QWidget" name="tabWidget_24Page1">
            <attribute name="title">
@@ -25281,12 +25544,12 @@ font: 11pt bebas kai;
    <slot>deleteItem()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>738</x>
-     <y>630</y>
+     <x>109</x>
+     <y>76</y>
     </hint>
     <hint type="destinationlabel">
-     <x>738</x>
-     <y>146</y>
+     <x>119</x>
+     <y>76</y>
     </hint>
    </hints>
   </connection>
@@ -25297,12 +25560,12 @@ font: 11pt bebas kai;
    <slot>viewParentDirectory()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>752</x>
-     <y>108</y>
+     <x>129</x>
+     <y>76</y>
     </hint>
     <hint type="destinationlabel">
-     <x>738</x>
-     <y>146</y>
+     <x>119</x>
+     <y>76</y>
     </hint>
    </hints>
   </connection>
@@ -25313,12 +25576,12 @@ font: 11pt bebas kai;
    <slot>newFolder()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>995</x>
-     <y>630</y>
+     <x>144</x>
+     <y>76</y>
     </hint>
     <hint type="destinationlabel">
-     <x>738</x>
-     <y>146</y>
+     <x>119</x>
+     <y>76</y>
     </hint>
    </hints>
   </connection>
@@ -25329,12 +25592,12 @@ font: 11pt bebas kai;
    <slot>newFolder()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>403</x>
-     <y>630</y>
+     <x>144</x>
+     <y>76</y>
     </hint>
     <hint type="destinationlabel">
-     <x>146</x>
-     <y>146</y>
+     <x>119</x>
+     <y>76</y>
     </hint>
    </hints>
   </connection>
@@ -25345,12 +25608,12 @@ font: 11pt bebas kai;
    <slot>doFileTransfer()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>610</x>
-     <y>323</y>
+     <x>79</x>
+     <y>136</y>
     </hint>
     <hint type="destinationlabel">
-     <x>146</x>
-     <y>146</y>
+     <x>119</x>
+     <y>76</y>
     </hint>
    </hints>
   </connection>
@@ -25361,12 +25624,12 @@ font: 11pt bebas kai;
    <slot>newFile()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>854</x>
-     <y>630</y>
+     <x>119</x>
+     <y>76</y>
     </hint>
     <hint type="destinationlabel">
-     <x>738</x>
-     <y>146</y>
+     <x>119</x>
+     <y>76</y>
     </hint>
    </hints>
   </connection>
@@ -25377,12 +25640,12 @@ font: 11pt bebas kai;
    <slot>deleteItem()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>146</x>
-     <y>630</y>
+     <x>109</x>
+     <y>76</y>
     </hint>
     <hint type="destinationlabel">
-     <x>146</x>
-     <y>146</y>
+     <x>119</x>
+     <y>76</y>
     </hint>
    </hints>
   </connection>
@@ -25393,12 +25656,12 @@ font: 11pt bebas kai;
    <slot>doFileTransfer()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>610</x>
-     <y>485</y>
+     <x>79</x>
+     <y>136</y>
     </hint>
     <hint type="destinationlabel">
-     <x>738</x>
-     <y>146</y>
+     <x>119</x>
+     <y>76</y>
     </hint>
    </hints>
   </connection>
@@ -25409,12 +25672,12 @@ font: 11pt bebas kai;
    <slot>viewParentDirectory()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>160</x>
-     <y>108</y>
+     <x>129</x>
+     <y>76</y>
     </hint>
     <hint type="destinationlabel">
-     <x>146</x>
-     <y>146</y>
+     <x>119</x>
+     <y>76</y>
     </hint>
    </hints>
   </connection>
@@ -25425,12 +25688,12 @@ font: 11pt bebas kai;
    <slot>transferFile(QString)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>146</x>
-     <y>146</y>
+     <x>119</x>
+     <y>76</y>
     </hint>
     <hint type="destinationlabel">
-     <x>738</x>
-     <y>146</y>
+     <x>119</x>
+     <y>76</y>
     </hint>
    </hints>
   </connection>
@@ -25441,12 +25704,12 @@ font: 11pt bebas kai;
    <slot>loadSelectedFile()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1110</x>
-     <y>108</y>
+     <x>119</x>
+     <y>76</y>
     </hint>
     <hint type="destinationlabel">
-     <x>738</x>
-     <y>146</y>
+     <x>119</x>
+     <y>76</y>
     </hint>
    </hints>
   </connection>
@@ -25457,12 +25720,12 @@ font: 11pt bebas kai;
    <slot>transferFile(QString)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>738</x>
-     <y>146</y>
+     <x>119</x>
+     <y>76</y>
     </hint>
     <hint type="destinationlabel">
-     <x>146</x>
-     <y>146</y>
+     <x>119</x>
+     <y>76</y>
     </hint>
    </hints>
   </connection>
@@ -25473,12 +25736,12 @@ font: 11pt bebas kai;
    <slot>setEnabled(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>738</x>
-     <y>146</y>
+     <x>119</x>
+     <y>76</y>
     </hint>
     <hint type="destinationlabel">
-     <x>1110</x>
-     <y>108</y>
+     <x>119</x>
+     <y>76</y>
     </hint>
    </hints>
   </connection>
@@ -25489,28 +25752,12 @@ font: 11pt bebas kai;
    <slot>newFile()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>262</x>
-     <y>630</y>
+     <x>119</x>
+     <y>76</y>
     </hint>
     <hint type="destinationlabel">
-     <x>146</x>
-     <y>146</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>load_spindle_tool_number</sender>
-   <signal>returnPressed()</signal>
-   <receiver>load_current_tool</receiver>
-   <slot>click()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>213</x>
-     <y>89</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>215</x>
-     <y>91</y>
+     <x>119</x>
+     <y>76</y>
     </hint>
    </hints>
   </connection>
@@ -26321,12 +26568,12 @@ font: 11pt bebas kai;
    <slot>rename()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1044</x>
-     <y>611</y>
+     <x>109</x>
+     <y>76</y>
     </hint>
     <hint type="destinationlabel">
-     <x>1042</x>
-     <y>578</y>
+     <x>119</x>
+     <y>76</y>
     </hint>
    </hints>
   </connection>
@@ -26337,12 +26584,12 @@ font: 11pt bebas kai;
    <slot>rename()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>456</x>
-     <y>613</y>
+     <x>109</x>
+     <y>76</y>
     </hint>
     <hint type="destinationlabel">
-     <x>454</x>
-     <y>572</y>
+     <x>119</x>
+     <y>76</y>
     </hint>
    </hints>
   </connection>
@@ -26353,12 +26600,12 @@ font: 11pt bebas kai;
    <slot>setText(QString)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1078</x>
-     <y>317</y>
+     <x>119</x>
+     <y>76</y>
     </hint>
     <hint type="destinationlabel">
-     <x>1175</x>
-     <y>317</y>
+     <x>119</x>
+     <y>76</y>
     </hint>
    </hints>
   </connection>
@@ -26369,12 +26616,12 @@ font: 11pt bebas kai;
    <slot>setText(QString)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1092</x>
-     <y>246</y>
+     <x>119</x>
+     <y>76</y>
     </hint>
     <hint type="destinationlabel">
-     <x>1282</x>
-     <y>129</y>
+     <x>319</x>
+     <y>71</y>
     </hint>
    </hints>
   </connection>
@@ -26385,12 +26632,12 @@ font: 11pt bebas kai;
    <slot>setFilename(QString)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1015</x>
-     <y>381</y>
+     <x>119</x>
+     <y>76</y>
     </hint>
     <hint type="destinationlabel">
-     <x>1215</x>
-     <y>379</y>
+     <x>119</x>
+     <y>76</y>
     </hint>
    </hints>
   </connection>
@@ -26401,12 +26648,12 @@ font: 11pt bebas kai;
    <slot>setEditable(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1228</x>
-     <y>611</y>
+     <x>119</x>
+     <y>76</y>
     </hint>
     <hint type="destinationlabel">
-     <x>1213</x>
-     <y>550</y>
+     <x>119</x>
+     <y>76</y>
     </hint>
    </hints>
   </connection>
@@ -26417,12 +26664,12 @@ font: 11pt bebas kai;
    <slot>saveAs()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1521</x>
-     <y>615</y>
+     <x>119</x>
+     <y>76</y>
     </hint>
     <hint type="destinationlabel">
-     <x>1525</x>
-     <y>453</y>
+     <x>119</x>
+     <y>76</y>
     </hint>
    </hints>
   </connection>
@@ -26433,12 +26680,12 @@ font: 11pt bebas kai;
    <slot>save()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1439</x>
-     <y>621</y>
+     <x>119</x>
+     <y>76</y>
     </hint>
     <hint type="destinationlabel">
-     <x>1438</x>
-     <y>476</y>
+     <x>119</x>
+     <y>76</y>
     </hint>
    </hints>
   </connection>
@@ -26449,12 +26696,12 @@ font: 11pt bebas kai;
    <slot>find_replace()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1335</x>
-     <y>622</y>
+     <x>119</x>
+     <y>76</y>
     </hint>
     <hint type="destinationlabel">
-     <x>1309</x>
-     <y>485</y>
+     <x>119</x>
+     <y>76</y>
     </hint>
    </hints>
   </connection>
@@ -26477,13 +26724,13 @@ font: 11pt bebas kai;
   </property>
  </designerdata>
  <buttongroups>
+  <buttongroup name="proberoutinebtnGroup"/>
+  <buttongroup name="probetabGroup"/>
   <buttongroup name="plotviewGroup"/>
   <buttongroup name="plotorthoperspbtnGroup"/>
-  <buttongroup name="probehelpGroup"/>
-  <buttongroup name="probetabGroup"/>
   <buttongroup name="mainorthoperspbtnGroup"/>
   <buttongroup name="xycalbtnGroup"/>
-  <buttongroup name="proberoutinebtnGroup"/>
+  <buttongroup name="probehelpGroup"/>
   <buttongroup name="probemodeGroup"/>
  </buttongroups>
 </ui>
