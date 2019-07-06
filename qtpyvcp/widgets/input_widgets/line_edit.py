@@ -4,7 +4,7 @@ Line Edit
 """
 
 from qtpy.QtCore import Property
-from qtpy.QtWidgets import QLineEdit
+from qtpy.QtWidgets import QLineEdit  # , QIntValidator, QDoubleValidator
 
 from qtpyvcp.utilities.logger import getLogger
 from qtpyvcp.widgets.base_widgets.base_widget import CMDWidget
@@ -25,6 +25,7 @@ class VCPLineEdit(QLineEdit, CMDWidget):
         super(VCPLineEdit, self).__init__(parent)
 
         self._action_name = ''
+        self.input_type = "default"
 
         self.returnPressed.connect(self.onReturnPressed)
 
@@ -45,3 +46,21 @@ class VCPLineEdit(QLineEdit, CMDWidget):
         self._action_name = action_name
         # ToDo: activate action on enter
         # bindWidget(self, action_name)
+
+    @Property(str)
+    def inputType(self):
+        """The type of the inupt the entry should accept.
+
+        Returns:
+            str : The entry type.
+        """
+        return self._input_type
+
+    @inputType.setter
+    def inputType(self, input_type):
+        self._input_type = input_type
+
+        # if self._input_type == "integer":
+        #     self.setValidator(QIntValidator())
+        # elif self._input_type == "decimal":
+        #     self.setValidator(QDoubleValidator())
