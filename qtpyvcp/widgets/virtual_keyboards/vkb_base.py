@@ -11,8 +11,4 @@ class VKBBase(QDialog):
         if ui_file is not None:
             uic.loadUi(ui_file, self)
 
-        self.setWindowFlags(Qt.WindowDoesNotAcceptFocus | Qt.Tool |
-                            Qt.FramelessWindowHint | Qt.WindowStaysOnTopHint)
-
-        # self.show()
-
+        self.setWindowFlags(Qt.WindowDoesNotAcceptFocus | Qt.SplashScreen)
